@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/My js project/project-8(pswd generator)/style.css">
+     
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/603b1b2fbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>password generator</h1>
+<div class="container">
+    <input type="text" id="output">
+    <button>
+        <i class="fa-solid fa-shuffle" onclick="genpassword()"></i>
+    </button>
+    <button>
+        <i class="fa-regular fa-copy" onclick="copyclip()"></i>
+    </button>
+    <input type="range" id="length" min="8" max="20" value="8" oninput="genpassword()">
+    <h3 id="length-val">8</h3>
+</div>
+    <script src="/My js project/project-8(pswd generator)/main.js"></script>
+</body>
+</html>

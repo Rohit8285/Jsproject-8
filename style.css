@@ -1,0 +1,121 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(-135deg,#1cff0b,#008bfd);
+}
+ h1{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: Tahoma;
+}
+h1:hover{
+    color: #f6f8fb;
+    cursor: pointer;
+}
+.container{
+    width: 40%;
+    background: #193866;
+    padding: 80px 30px;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+#output{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    width: 75%;
+    height: 35px;
+    padding: 20px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+}
+button{
+    width: 11%;
+    height: 38px;
+    background-color: transparent;
+    color:#ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+
+}
+button:hover{
+    background-color: #e2e2e2;
+    color: #1c1e21;
+    border-radius: 3px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 85%;
+    margin-top: 80px;
+    height: 3.5px;
+    margin-top: 80px;
+    background-color: #e2e2e2;
+    border-radius: 4px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #008bfd;
+    border-radius: 50%;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 10%;
+    color: #1c1e21;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: 3%;
+    border-radius: 3px;
+    font-size: 18px;
+}
+h3:hover{
+    background-color: #e2e2e2;
+
+}
+@media screen and (max-width:450px) {
+    body{
+        overflow: hidden;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .container{
+        min-width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    button{
+        width: 10%;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    h1{
+        font-size: 60px;
+        margin-top:225px ;
+    }
+    .container{
+        min-width: 550px;
+    }
+}
